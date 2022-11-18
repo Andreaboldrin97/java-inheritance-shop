@@ -71,10 +71,11 @@ public class Prodotto {
 	@Override
 	public String toString() {
 		
-		return "Codice prodotto : " + codeProduct
-				+ "\nNome prodotto : " + nomeProduct
-				+ "\nMarca prodotto : " + brand
-				+ 	"\nPrezzo senza iva : " + price;
+		return "Codice prodotto : " + getCodeProduct()
+				+ "\nNome prodotto : " + getNomeProduct()
+				+ "\nMarca prodotto : " + getBrand()
+				+ 	"\nPrezzo senza iva : " + getPrice() +",00€"
+				+"\nPrezzo con IVA : " + getTotalPrice()+",00€";
 			
 	}
 

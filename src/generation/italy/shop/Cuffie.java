@@ -41,8 +41,8 @@ public class Cuffie extends Prodotto {
 	public String toString() {
 		// TODO Auto-generated method stub
 		return super.toString() 
-				+ "\nColore : " + colore
-				+ "\nSono Wireless : " + isWireless;
+				+ "\nColore : " + getColore()
+				+ "\nSono Wireless : " + isWireless();
 	}
 	
 	

@@ -39,7 +39,7 @@ public class Smarphone extends Prodotto{
 		public String toString() {
 			// TODO Auto-generated method stub
 			return super.toString() 
-					+ "\nCodice IMEI : " + codImei
-					+ "\nGrandezza memoria[ giga ]: " + giga;
+					+ "\nCodice IMEI : " + getCodImei()
+					+ "\nGrandezza memoria[ giga ]: " + getGiga();
 		}
 }

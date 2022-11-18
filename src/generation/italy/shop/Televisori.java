@@ -39,7 +39,7 @@ public class Televisori extends Prodotto{
 			public String toString() {
 				// TODO Auto-generated method stub
 				return super.toString() 
-						+ "\nGrandezza Tv : " + tvSize
-						+ "\nCompatibile con tv smart: " + isSmartTv;
+						+ "\nGrandezza Tv : " + getTvSize()
+						+ "\nCompatibile con tv smart: " + isSmartTv();
 			}
 }
