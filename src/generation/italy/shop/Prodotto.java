@@ -64,7 +64,7 @@ public class Prodotto {
 
 
 		// metodo che restituisce il prezzo più l'iva
-				public int getTotalPrice(int codeProduc) {
+				public int getTotalPrice() {
 					return price + ( price * iva / 100);
 				}
 	// metodo toString
