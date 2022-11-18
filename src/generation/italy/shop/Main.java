@@ -16,5 +16,11 @@ public class Main {
 		Smarphone phone = new Smarphone("Iphone 14", "Apple", 1000, "01 234567 890123 4", 250);
 		System.out.println(phone);
 		System.out.println("----------------------");
+		
+		//Televisori
+		//String nomeProduct, String brand, int price, int tvSize, boolean isSmartTv
+		Televisori tvLg = new Televisori("tv xy-zdr", "LG", 2000, 65, true);
+		System.out.println(tvLg);
+		System.out.println("----------------------");
 	}
 }
