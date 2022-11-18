@@ -1,5 +1,8 @@
 package generation.italy.shop;
 
+//SUB CLASS
+//la classe Smarphon estente la classe prodotto
+
 public class Smarphone extends Prodotto{
 	
 	// variabili d'istanza
