@@ -22,19 +22,39 @@ public class Prodotto {
 	}
 	
 	// metodi get e set
-	public int getCodeProduct() {
-		return codeProduct;
-	}
-	public void setCodeProduct(int codeProduct) {
-		this.codeProduct = codeProduct;
-	}
-	
-	// metodo che restituisce il prezzo più l'iva
-		public int getTotalPrice(int codeProduc) {
-			return price + ( price * iva / 100);
+	public String getNomeProduct() {
+			return nomeProduct;
 		}
-	
-	
+
+		public void setNomeProduct(String nomeProduct) {
+			this.nomeProduct = nomeProduct;
+		}
+
+		public String getBrand() {
+			return brand;
+		}
+
+		public void setBrand(String brand) {
+			this.brand = brand;
+		}
+
+		public int getPrice() {
+			return price;
+		}
+
+		public void setPrice(int price) {
+			this.price = price;
+		}
+
+		public int getIva() {
+			return iva;
+		}
+
+
+		// metodo che restituisce il prezzo più l'iva
+				public int getTotalPrice(int codeProduc) {
+					return price + ( price * iva / 100);
+				}
 	// metodo toString
 	@Override
 	public String toString() {
