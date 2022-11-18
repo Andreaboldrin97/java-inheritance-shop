@@ -34,4 +34,12 @@ public class Televisori extends Prodotto{
 				this.isSmartTv = isSmartTv;
 			}
 			
+			// concatenzaione con il toString della classe prodotto
+			@Override
+			public String toString() {
+				// TODO Auto-generated method stub
+				return super.toString() 
+						+ "\nGrandezza Tv : " + tvSize
+						+ "\nCompatibile con tv smart: " + isSmartTv;
+			}
 }

@@ -34,5 +34,12 @@ public class Smarphone extends Prodotto{
 			this.rom = rom;
 		}
 
-		
+		// concatenzaione con il toString della classe prodotto
+		@Override
+		public String toString() {
+			// TODO Auto-generated method stub
+			return super.toString() 
+					+ "\nCodice IMEI : " + codImei
+					+ "\nGrandezza memoria[ ROM ]: " + rom;
+		}
 }

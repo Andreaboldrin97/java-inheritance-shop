@@ -36,4 +36,14 @@ public class Cuffie extends Prodotto {
 	}
 	
 	
+	// concatenzaione con il toString della classe prodotto
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString() 
+				+ "\nColore : " + colore
+				+ "\nSono Wireless : " + isWireless;
+	}
+	
+	
 }
