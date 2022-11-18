@@ -9,10 +9,10 @@ public class Smarphone extends Prodotto{
 		private String codImei;
 		private int rom;
 		
-		public Smarphone(int codeProduct, String nomeProduct, String brand, int price, String codImei, int rom ) {
+		public Smarphone(String nomeProduct, String brand, int price, String codImei, int rom ) {
 			
 			// chiamo il costruttore della classe Prodotto
-			super(codeProduct, nomeProduct, brand, price);
+			super(nomeProduct, brand, price);
 			this.codImei = codImei;
 			this.rom = rom;
 		}

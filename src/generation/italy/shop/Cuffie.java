@@ -10,10 +10,10 @@ public class Cuffie extends Prodotto {
 	private String colore;
 	private boolean isWireless;
 	
-	public Cuffie(int codeProduct, String nomeProduct, String brand, int price, String colore, boolean isWireless ) {
+	public Cuffie(String nomeProduct, String brand, int price, String colore, boolean isWireless ) {
 		
 		// chiamo il costruttore della classe Prodotto
-		super(codeProduct, nomeProduct, brand, price);
+		super(nomeProduct, brand, price);
 		this.colore = colore;
 		this.isWireless = isWireless;
 	}

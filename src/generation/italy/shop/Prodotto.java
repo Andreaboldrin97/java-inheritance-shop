@@ -1,5 +1,7 @@
 package generation.italy.shop;
 
+import java.util.Random;
+
 // SUPER CLASSE
 public class Prodotto {
 
@@ -11,18 +13,28 @@ public class Prodotto {
 	private int iva;
 	
 	// costruttore
-	public Prodotto(int codeProduct, String nomeProduct, String brand, int price) {
+	public Prodotto(String nomeProduct, String brand, int price) {
 		
 		// assegnazine
-		this.codeProduct = codeProduct;
+		
 		this.nomeProduct = nomeProduct;
 		this.brand = brand;
 		this.price = price;
+		
+		// assegnazione automatica
+		Random rand = new Random();
+		codeProduct = rand.nextInt(101);
+		
 		iva = 20;
 	}
 	
 	// metodi get e set
-	public String getNomeProduct() {
+	
+		public int getCodeProduct() {
+			return codeProduct;
+		}
+
+		public String getNomeProduct() {
 			return nomeProduct;
 		}
 
