@@ -7,14 +7,14 @@ public class Smarphone extends Prodotto{
 	
 	// variabili d'istanza
 		private String codImei;
-		private int rom;
+		private int giga;
 		
-		public Smarphone(String nomeProduct, String brand, int price, String codImei, int rom ) {
+		public Smarphone(String nomeProduct, String brand, int price, String codImei, int giga ) {
 			
 			// chiamo il costruttore della classe Prodotto
 			super(nomeProduct, brand, price);
 			this.codImei = codImei;
-			this.rom = rom;
+			this.giga = giga;
 		}
 		
 		// metodi get e set
@@ -26,12 +26,12 @@ public class Smarphone extends Prodotto{
 			this.codImei = codImei;
 		}
 
-		public int getRom() {
-			return rom;
+		public int getGiga() {
+			return giga;
 		}
 
-		public void setRom(int rom) {
-			this.rom = rom;
+		public void setGiga(int giga) {
+			this.giga = giga;
 		}
 
 		// concatenzaione con il toString della classe prodotto
@@ -40,6 +40,6 @@ public class Smarphone extends Prodotto{
 			// TODO Auto-generated method stub
 			return super.toString() 
 					+ "\nCodice IMEI : " + codImei
-					+ "\nGrandezza memoria[ ROM ]: " + rom;
+					+ "\nGrandezza memoria[ giga ]: " + giga;
 		}
 }
